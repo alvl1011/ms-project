@@ -9,7 +9,7 @@ type Animal interface {
 type Dog struct{}
 
 func (d Dog) scream() {
-	fmt.Println("Bark!!")
+	fmt.Println("Woof!!")
 }
 
 type Cat struct{}
