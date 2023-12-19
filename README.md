@@ -1,5 +1,7 @@
 # Modelbased Software Development: OO in Java versus Go
 
+authors: Vladimir Alyoshin, Nico Fuchs, Yannic Schmudlach
+
 ## Overview
 This project contains examples of nominal subtyping and virtual methods in Java and structural subtyping in Go. 
 Two examples:
