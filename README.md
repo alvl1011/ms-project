@@ -12,8 +12,19 @@ Two examples:
 
 Nominal subtyping and structural subtyping are two different approaches to type systems in programming languages. Let's discuss each along with examples in Go (which uses structural subtyping) and Java (which uses nominal subtyping).
 
-1. **Nominal Subtyping:**
-   - **Definition:** In nominal subtyping, types are compatible if and only if their names match. It's based on the name of the type.
+1. **Nominal Subtyping:**<br>
+   **Definition:** In nominal subtyping, we consider an assignment type checks. In the following example we have `Dog` class, which extends from `Animal`. In logic notation, this will look as the following:
+    ```
+    Dog <= Animal
+    ```
+    Hence, the following program text type checks
+    ```java
+    Animal myPet = new Dog();
+    ```
+    for the following reason: 
+    The right-hand side `new Dog()` is of the type `Dog`. By making use of `Dog <= Animal` we can argue that the right-hand side is also of type `Animal`. <br>
+    -> assignement type checks.
+
    - **Example (Java):**
      ```java
      interface Animal {
