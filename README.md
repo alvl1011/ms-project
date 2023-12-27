@@ -54,8 +54,8 @@ Nominal subtyping and structural subtyping are two different approaches to type 
      animalSound(myPet); // Outputs: Woof!
      ```
 
-2. **Structural Subtyping:**
-   - **Definition:** In structural subtyping, types are compatible if their structures match, i.e., if they have the same set of methods or fields.
+2. **Structural Subtyping:**<br>
+   **Definition:** In structural subtyping type compatibility and equivalence are determined by the subtype's actual structure or definition and not by other characteristics such as its name or place of declaration. The structural subtyping relationship is established implicitly when types implement the same method signatures. The `Dog` and `Cat` types are not explicitly declared to be subtypes of `Animal`; instead, they are structurally compatible with the `Animal` interface because they both have a method named `makeSound` with the same signature.<br>
    - **Example (Go):**
      ```go
      package main
